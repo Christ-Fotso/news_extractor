@@ -254,7 +254,6 @@ class AppWindow(TkinterDnD.Tk):
                 filename = os.path.basename(task['path'])
                 self.status_label.config(text=f"Traitement de {filename}...")
                 self.update_idletasks()
-
                 pdf_text = extract_text_from_pdf(task['path'])
                 if not pdf_text:
                     print(f"Avertissement : Aucun texte extrait de {filename}. Fichier ignoré.")
