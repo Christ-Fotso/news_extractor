@@ -7,7 +7,7 @@ DOTENV_PATH = os.path.join(PROJECT_ROOT, '.env')
 load_dotenv(dotenv_path=DOTENV_PATH)
 
 API_KEYS = {}
-for i in range(2, 32):
+for i in range(1, 32):
     key_name = f"GOOGLE_API_KEY_{i}"
     API_KEYS[key_name] = os.getenv(key_name)
 SOURCES_CONFIG = {

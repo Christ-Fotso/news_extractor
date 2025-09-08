@@ -33,12 +33,12 @@ class AIExtractor:
             "temperature": 0.1,
             "top_p": 1,
             "top_k": 1,
-            "max_output_tokens": 8192,
+            "max_output_tokens": 500000,
         }
         safety_settings = [
         ]
         self.model = genai.GenerativeModel(
-            model_name="gemini-1.5-flash",
+            model_name="gemini-1.5-pro",
             generation_config=generation_config,
             safety_settings=safety_settings
         )
